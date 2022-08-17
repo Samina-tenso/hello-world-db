@@ -23,5 +23,6 @@
   "bugs": {
     "url": "https://github.com/cme-osuka/hello-world-db/issues"
   },
-  "homepage": "https://github.com/cme-osuka/hello-world-db#readme"
+  "homepage": "https://github.com/cme-osuka/hello-world-db#readme",
+  "devDependencies": {}
 }
