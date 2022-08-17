@@ -1,7 +1,7 @@
 const app = require("express")();
 
 const config = require("./knexfile.js");
-const knex = require("knex")(/* Knexfile-config */)
+const knex = require("knex")(config[process.env.NODE.ENV])
 
 app.get("/", (req, res) => {
   res.send(process.env.GREETING);
@@ -12,7 +12,7 @@ app.get("/add/:name", (req, res) => {
   const person = {
     id: 0,
     name: "Ryan"
-  }; 
+  };
 
   res.send(person)
 })
